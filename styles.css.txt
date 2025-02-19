@@ -1,0 +1,81 @@
+body {
+    background-color: #111;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.login-container {
+    width: 30%;
+    margin: 10% auto;
+    padding: 20px;
+    background: #222;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+}
+
+input, textarea {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+    background: #333;
+    color: white;
+    border: 1px solid cyan;
+}
+
+button {
+    background: cyan;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    box-shadow: 0 0 10px cyan;
+}
+
+.container {
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+    background: #222;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+}
+
+.progress-bar {
+    width: 80%;
+    height: 10px;
+    background: gray;
+    margin: 10px auto;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress {
+    width: 0%;
+    height: 100%;
+    background: cyan;
+    transition: width 3s;
+}
+
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    background: #222;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid cyan;
+}
+
+#error-message {
+    color: red;
+    font-size: 14px;
+}
