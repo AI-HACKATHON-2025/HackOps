@@ -1,0 +1,21 @@
+function login() {
+    const username = document.getElementById("username").value;
+    const password = document.getElementById("password").value;
+
+    if (username === "admin" && password === "password123") {
+        window.location.href = "dashboard.html"; // Redirect to the dashboard
+    } else {
+        document.getElementById("error-message").innerText = "Invalid login credentials!";
+    }
+}
+
+function nextStep(step) {
+    document.getElementById('step' + (step - 1)).style.display = "none";
+    document.getElementById('step' + step).style.display = "block";
+}
+
+function startEvaluation() {
+    document.getElementById('evaluateBtn').disabled = true;
+    document.getElementById('progress').style.width = "100%";
+    setTimeout(() => nextStep(5), 3000);
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-Based Exam Evaluation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>AI-Based Exam Evaluation</h1>
+    <div class="container">
+        <div id="step1">
+            <h2>Upload Exam Questions</h2>
+            <input type="file" id="questionsFile">
+            <button onclick="nextStep(2)">Next</button>
+        </div>
+
+        <div id="step2" style="display: none;">
+            <h2>Upload Answer Sheets</h2>
+            <input type="file" id="answersFile">
+            <button onclick="nextStep(3)">Next</button>
+        </div>
+
+        <div id="step3" style="display: none;">
+            <h2>Define Grading Criteria</h2>
+            <textarea placeholder="Enter grading criteria..." id="grading"></textarea>
+            <button onclick="nextStep(4)">Next</button>
+        </div>
+
+        <div id="step4" style="display: none;">
+            <h2>Evaluating...</h2>
+            <div class="progress-bar">
+                <div class="progress" id="progress"></div>
+            </div>
+            <button id="evaluateBtn" onclick="startEvaluation()">Start Evaluation</button>
+        </div>
+
+        <div id="step5" style="display: none;">
+            <h2>Evaluation Results</h2>
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Roll No</th>
+                    <th>Score</th>
+                </tr>
+                <tr>
+                    <td>John Doe</td>
+                    <td>1001</td>
+                    <td>85%</td>
+                </tr>
+                <tr>
+                    <td>Jane Smith</td>
+                    <td>1002</td>
+                    <td>92%</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
